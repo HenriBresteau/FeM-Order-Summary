@@ -29,7 +29,7 @@ main {
 .cardHeader {
   background: url(/images/illustration-hero.svg) no-repeat center/cover;
   width: auto;
-  height: 220px;
+  height: 160px;
   border-radius: 20px 20px 0 0;
 }
 .cardContent {
@@ -109,6 +109,9 @@ main {
 @media (min-width: 480px) {
   .container {
     width: 375px;
+  }
+  .cardHeader {
+    height: 200px;
   }
   .cardBtn button {
     width: 320px;
