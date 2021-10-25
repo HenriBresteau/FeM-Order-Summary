@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  --P-Pale: hsl(225, 100%, 94%);
+  --P-Bright: hsl(245, 75%, 52%);
+  --N-Pale: hsl(225, 100%, 98%);
+  --N-Desature: hsl(224, 23%, 55%);
+  --N-Dark: hsl(223, 47%, 23%);
+}
+
+main {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--P-Pale);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.container {
+  margin: 5rem auto;
+  width: 330px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.cardHeader {
+  background: url(/images/illustration-hero.svg) no-repeat center/cover;
+  width: auto;
+  height: 220px;
+  border-radius: 20px 20px 0 0;
+}
+.cardContent {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.cardTitle {
+  color: var(--N-Dark);
+  font-weight: 900;
+}
+.cardSubTitle {
+  color: var(--N-Desature);
+  font-weight: 500;
+}
+.cardSummary {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 46px;
+  margin-bottom: 40px;
+  padding: 16px;
+  background-color: var(--N-Pale);
+  border-radius: 20px;
+}
+.product {
+  color: var(--N-Dark);
+  font-weight: 900;
+  font-size: 16px;
+  margin-block-start: 1px;
+  margin-block-end: 0;
+}
+.price {
+  color: var(--N-Desature);
+  font-size: 16px;
+  margin-block-start: 1px;
+  margin-block-end: 0;
+}
+.change a {
+  color: var(--P-Bright);
+  font-weight: 900;
+  transition: 0.3s all;
+}
+.change a:hover {
+  color: hsl(245deg 75% 52% / 75%);
+  text-decoration: none;
+}
+.cardBtn button {
+  width: 280px;
+  padding: 16px;
+  background-color: var(--P-Bright);
+  border: none;
+  font-weight: 900;
+  color: var(--P-Pale);
+  border-radius: 10px;
+  transition: 0.3s all;
+  cursor: pointer;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.cardBtn {
+  margin: 12px 0;
+}
+.cardBtn button.cardBtnPay:hover {
+  background-color: hsl(245deg 75% 52% / 75%);
+}
+.cardBtn button.cardBtnCancel {
+  color: var(--N-Desature);
+  background-color: var(--N-Pale);
+}
+.cardBtn button.cardBtnCancel:hover {
+  color: var(--N-Dark);
+  background-color: var(--P-Pale);
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 375px;
+  }
+  .cardBtn button {
+    width: 320px;
+  }
+}
+
+footer {
+  position: relative;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
